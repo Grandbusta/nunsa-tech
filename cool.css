@@ -5,8 +5,7 @@
 }
 
 body {
-    background: #ddd;
-    margin: 0;
+    margin: 0px 3rem;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -18,10 +17,9 @@ h3{
     margin-bottom: 40px;
 }
 /* heading*/
-.container h1 {
+.container h1,h2 {
 
     text-align: center;
-
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -64,16 +62,15 @@ li {
     padding-left: 10px;
 }
 
-td:nth-of-type(even),
-th:nth-of-type(odd) {
-    background-color: blue;
-    color: white;
-}
 
-td:nth-of-type(odd),
-th:nth-of-type(even) {
+td{
     color: blue;
     background-color: white;
+}
+
+th{
+    color: white;
+    background-color: blue;
 }
 
 /* margin section  */
@@ -178,8 +175,6 @@ background-color: yellow;
     border-radius: 9px;
 }
 .button{
-  
-   
     display: block;
     margin: 0 auto;
     margin-top: 50px;
@@ -192,8 +187,6 @@ background-color: yellow;
     display: block;
     width: 100%;
     text-align: center;
-
-
 }
 .link a{
     
@@ -201,4 +194,28 @@ background-color: yellow;
 }
 .link h3,.button h3{
     margin-bottom: 20px;
+}
+
+#hero-img{
+    width: 100%;
+}
+#hero-img>img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.menus{
+    margin-bottom: 1rem;
+}
+.secttitle{
+    color: red;
+}
+.sectiondiv{
+    margin: 4rem 0rem;
+}
+
+#aboutText{
+    text-align: center;
+    padding: 0px 2rem;
 }
