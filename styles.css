@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    border: 1px solid gray;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #d2d2d2;
+}
+
+#image_container{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 37%;
+    top: 19%;
+    position: absolute;
+    transition: .5s linear;
+    animation: profilepicture 5s infinite linear;
+}
+
+@keyframes profilepicture{
+    0% {
+        transform: scale(1.1);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(-45deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+#image_container:hover{
+    animation-play-state: paused;
+    width: 120px;
+    height: 120px;
+    top: 17%;
+    left: 35%;
+}
+
+.profile_picture{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.top_section{
+    
+    width: 100%;
+    height: 30%;
+    background-color: #7900ff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation: bgchange 30s infinite linear alternate;
+}
+
+@keyframes bgchange {
+    0% { background-color: #7900ff;}
+    25% {background-color: red;}
+    50% {background-color: green;}
+    75% {background-color: yellow;}
+    100%{background-color: sienna;}
+}
+
+.top_section:hover{
+    animation-play-state: paused;
+}
+
+.bottom_section{
+    width: 100%;
+    height: 70%;
+    padding: 0 20px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#name{
+    font-size: 25px;
+    margin-top: 70px;
+}
+
+#role{
+    text-transform: capitalize;
+    color: #6728a8;
+    font-size: 150%;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.profile_btn{
+    font-weight: bold;
+    background-color: #7900ff;
+    border: none;
+    color: #ffff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    transition: .5s linear;
+}
+
+.profile_btn:hover{
+    transform: scale(1.2);
+    background-color: #dc143c;
+}
